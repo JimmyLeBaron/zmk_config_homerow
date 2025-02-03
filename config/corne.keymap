@@ -54,9 +54,9 @@
 
         layer_2 {
             bindings = <
-&kp GRAVE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(UNDER)  &kp LS(PLUS)  &kp BSPC
-&trans     &trans        &trans      &kp LS(LBRC)   &kp LS(RBRC)  &trans           &trans         &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH       &kp UP        &kp SQT
-&trans     &trans        &kp X       &kp C          &kp V         &trans           &trans         &kp LBKT      &kp RBKT      &kp LEFT       &kp DOWN      &kp RIGHT
+&kp GRAVE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp MINUS  &kp EQUAL  &kp BSPC
+&trans     &trans        &trans      &kp LS(LBRC)   &kp LS(RBRC)  &trans           &trans         &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH   &kp UP     &kp SQT
+&trans     &trans        &kp X       &kp C          &kp V         &trans           &trans         &kp LBKT      &kp RBKT      &kp LEFT   &kp DOWN   &kp RIGHT
                                      &mo 4          &trans        &trans           &trans         &trans        &trans
             >;
         };
