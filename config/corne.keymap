@@ -36,7 +36,7 @@
 
         layer_0 {
             bindings = <
-&kp TAB      &kp Q  &kp W  &kp F       &kp P  &kp B    &kp J   &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp A        &kp Q  &kp W  &kp F       &kp P  &kp B    &kp J   &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
 &kp LSHFT    &kp A  &kp R  &kp S       &kp T  &kp G    &kp M   &kp N      &kp E      &kp I    &kp O     &kp SINGLE_QUOTE
 &lm 1 LCTRL  &kp Z  &kp X  &kp C       &kp D  &kp V    &kp K   &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RET
                            &lm 1 LGUI  &mo 2  &mo 3    &tog 3  &kp SPACE  &kp RALT
