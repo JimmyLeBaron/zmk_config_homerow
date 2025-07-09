@@ -10,22 +10,22 @@
 
 / {
     // --- Macros for switching device + layer simultaneously ---
-    macros {
-        switch_mac {
-            compatible = "zmk,behavior-macro";
-            bindings = <
-                &bt BT_SEL 1     // Switch to Bluetooth device 2 (Mac)
-                &tog 6           // Switch to Mac layer (layer_6)
-            >;
-        };
-        switch_win {
-            compatible = "zmk,behavior-macro";
-            bindings = <
-                &bt BT_SEL 0     // Switch to Bluetooth device 1 (Windows)
-                &tog 0           // Switch to Windows layer (layer_0)
-            >;
-        };
+macros {
+    switch_mac: switch_mac {
+        compatible = "zmk,behavior-macro";
+        bindings = <
+            &bt BT_SEL 1
+            &tog 6
+        >;
     };
+    switch_win: switch_win {
+        compatible = "zmk,behavior-macro";
+        bindings = <
+            &bt BT_SEL 0
+            &tog 0
+        >;
+    };
+};
 
     lm: lm {
         compatible = "zmk,behavior-macro-two-param";
