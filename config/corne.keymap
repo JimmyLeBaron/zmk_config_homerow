@@ -11,9 +11,6 @@
 / {
     // --- Macros for switching device + layer simultaneously ---
     macros {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-
         switch_mac: switch_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
