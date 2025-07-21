@@ -15,13 +15,13 @@
         switch_mac: switch_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog 1>;
+            bindings = <&bt BT_SEL 1 &tog_on 1>;
         };
 
         switch_win: switch_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog 0>;
+            bindings = <&bt BT_SEL 0 &tog_off 1>;
         };
     };
 
