@@ -39,19 +39,7 @@
             hold-trigger-on-release;
         };
 
-        tog_on: toggle_layer_on_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer On";
-            type = "on";
-        };
 
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            type = "off";
-        };
 
         lm: lm {
             compatible = "zmk,behavior-macro-two-param";
