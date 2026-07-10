@@ -1,0 +1,15 @@
+{
+  "image": "zmkfirmware/zmk-dev-arm:3.5",
+  "remoteEnv": {
+    "ZMK_CONFIG": "${containerWorkspaceFolder}/config"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "xaver.clang-format"
+      ]
+    }
+  },
+  "postCreateCommand": "west init -l config && west update"
+}
