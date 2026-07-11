@@ -1,0 +1,11 @@
+# ZMK / Zephyr West environment
+/zmk/
+/modules/
+/.west/
+
+# Build artifacts
+/build/
+/firmware/
+
+# OS generated files
+.DS_Store
