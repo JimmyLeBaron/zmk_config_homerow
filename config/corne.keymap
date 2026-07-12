@@ -68,9 +68,9 @@
 
         Col-mac {
             bindings = <
-&kp Q        &kp W         &kp F  &kp P      &kp B         &kp J          &kp L         &kp U            &kp Y         &kp APOSTROPHE  &hml LCTRL A  &hml LALT R
-&hml LGUI S  &hml LSHFT T  &kp G  &kp M      &hmr RSHFT N  &hmr RGUI E    &hmr RALT I   &hmr RCTRL O     &kp Z         &kp X           &kp C         &kp D
-&kp V        &kp K         &kp H  &kp COMMA  &kp DOT       &kp FSLH       &lt 1 ESCAPE  &lt 1 BACKSPACE  &lt 2 DELETE  &lt 3 ENTER     &lt 4 SPACE   &kp TAB
+&kp Q        &kp W         &kp F  &kp P      &kp B         &kp J          &kp L        &kp U            &kp Y         &kp APOSTROPHE  &hml LCTRL A  &hml LALT R
+&hml LGUI S  &hml LSHFT T  &kp G  &kp M      &hmr RSHFT N  &hmr RGUI E    &hmr RALT I  &hmr RCTRL O     &kp Z         &kp X           &kp C         &kp D
+&kp V        &kp K         &kp H  &kp COMMA  &kp DOT       &kp FSLH       &kp ESC      &lt 1 BACKSPACE  &lt 2 DELETE  &lt 3 ENTER     &lt 4 SPACE   &kp TAB
             >;
         };
 
