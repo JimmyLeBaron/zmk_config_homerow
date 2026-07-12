@@ -68,54 +68,54 @@
 
         Col-mac {
             bindings = <
-&none  &kp Q  &kp W  &kp F         &kp P        &kp B    &kp J   &kp L        &kp U         &kp Y    &kp SEMI  &kp BSPC
-&none  &kp A  &kp R  &hml LSHFT S  &hml LGUI T  &kp G    &kp M   &hmr RGUI N  &hmr RSHFT E  &kp I    &kp O     &kp SINGLE_QUOTE
-&none  &kp Z  &kp X  &kp C         &kp D        &kp V    &kp K   &kp H        &kp COMMA     &kp DOT  &kp FSLH  &kp RET
+&none  &kp Q  &kp W  &kp F         &kp P        &kp B    &kp J   &kp L        &kp U         &kp Y    &kp SEMI  &none
+&none  &kp A  &kp R  &hml LSHFT S  &hml LGUI T  &kp G    &kp M   &hmr RGUI N  &hmr RSHFT E  &kp I    &kp O     &none
+&none  &kp Z  &kp X  &kp C         &kp D        &kp V    &kp K   &kp H        &kp COMMA     &kp DOT  &kp FSLH  &none
                      &lm 1 LCTRL   &mo 2        &mo 3    &tog 3  &kp SPACE    &kp RALT
             >;
         };
 
         QWERTY {
             bindings = <
-&trans     &kp Q  &kp W  &kp E         &kp R        &kp T     &kp Y   &kp U        &kp I         &kp O    &kp P     &trans
-&trans     &kp A  &kp S  &hml LSHFT D  &hml LGUI F  &kp G     &kp H   &hmr RGUI J  &hmr RSHFT K  &kp L    &kp SEMI  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V        &kp B     &kp N   &kp M        &kp COMMA     &kp DOT  &kp FSLH  &trans
+&none  &kp Q  &kp W  &kp E         &kp R        &kp T     &kp Y   &kp U        &kp I         &kp O    &kp P     &none
+&none  &kp A  &kp S  &hml LSHFT D  &hml LGUI F  &kp G     &kp H   &hmr RGUI J  &hmr RSHFT K  &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C         &kp V        &kp B     &kp N   &kp M        &kp COMMA     &kp DOT  &kp FSLH  &none
                          &kp LEFT_GUI  &kp SPACE    &trans    &trans  &trans       &trans
             >;
         };
 
         Symbols {
             bindings = <
-&trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp MINUS  &kp EQUAL  &kp BSPC
-&trans  &kp GRAVE     &trans      &kp LS(LBRC)   &kp LS(RBRC)  &trans           &trans         &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH   &kp UP     &kp SQT
-&trans  &trans        &kp X       &kp C          &kp V         &trans           &trans         &kp LBKT      &kp RBKT      &kp LEFT   &kp DOWN   &kp RIGHT
+&none  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp MINUS  &kp EQUAL  &none
+&none  &kp GRAVE     &trans      &kp LS(LBRC)   &kp LS(RBRC)  &trans           &trans         &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH   &kp UP     &none
+&none  &trans        &kp X       &kp C          &kp V         &trans           &trans         &kp LBKT      &kp RBKT      &kp LEFT   &kp DOWN   &none
                                   &mo 4          &trans        &trans           &trans         &kp UNDER     &trans
             >;
         };
 
         NumPad {
             bindings = <
-&trans  &kp ESC  &trans     &kp UP    &trans      &trans    &trans     &kp N7     &kp N8  &kp N9  &trans    &kp BSPC
-&trans  &trans   &kp LEFT   &kp DOWN  &kp RIGHT   &trans    &trans     &kp N4     &kp N5  &kp N6  &kp DOT   &trans
-&trans  &trans   &kp LCTRL  &kp LALT  &kp DELETE  &trans    &kp COMMA  &kp N1     &kp N2  &kp N3  &kp SEMI  &kp RET
+&none  &kp ESC  &trans     &kp UP    &trans      &trans    &trans     &kp N7     &kp N8  &kp N9  &trans    &none
+&none  &trans   &kp LEFT   &kp DOWN  &kp RIGHT   &trans    &trans     &kp N4     &kp N5  &kp N6  &kp DOT   &none
+&none  &trans   &kp LCTRL  &kp LALT  &kp DELETE  &trans    &kp COMMA  &kp N1     &kp N2  &kp N3  &kp SEMI  &none
                             &trans    &trans      &trans    &trans     &kp SPACE  &kp N0
             >;
         };
 
         FN {
             bindings = <
-&trans  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7        &kp F8             &kp F9        &kp F10   &kp F11        &kp F12
-&trans  &kp F1  &trans  &trans  &trans  &trans    &trans        &kp K_APPLICATION  &trans        &trans    &kp PAGE_UP    &trans
-&trans  &trans  &trans  &trans  &trans  &studio_unlock    &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &kp HOME  &kp PAGE_DOWN  &kp END
+&none  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7        &kp F8             &kp F9        &kp F10   &kp F11        &none
+&none  &kp F1  &trans  &trans  &trans  &trans    &trans        &kp K_APPLICATION  &trans        &trans    &kp PAGE_UP    &none
+&none  &trans  &trans  &trans  &trans  &studio_unlock    &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &kp HOME  &kp PAGE_DOWN  &none
                         &trans  &trans  &tog 1    &soft_off     &mo 5              &trans
             >;
         };
 
         BTClear {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &none
                         &trans  &trans  &trans    &trans      &trans  &trans
             >;
         };
