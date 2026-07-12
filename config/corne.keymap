@@ -70,7 +70,7 @@
             bindings = <
 &kp Q        &kp W         &kp F  &kp P      &kp B         &kp J          &kp L         &kp U            &kp Y         &kp APOSTROPHE  &hml LCTRL A  &hml LALT R
 &hml LGUI S  &hml LSHFT T  &kp G  &kp M      &hmr RSHFT N  &hmr RGUI E    &hmr RALT I   &hmr RCTRL O     &kp Z         &kp X           &kp C         &kp D
-&kp V        &kp K         &kp H  &kp COMMA  &kp DOT       &kp FSLH       &lt 1 ESCAPE  &lt 1 BACKSPACE  &lt 2 DELETE  &lt 3 ENTER     &kp SPACE     &kp TAB
+&kp V        &kp K         &kp H  &kp COMMA  &kp DOT       &kp FSLH       &lt 1 ESCAPE  &lt 1 BACKSPACE  &lt 2 DELETE  &lt 3 ENTER     &lt 4 SPACE   &kp TAB
             >;
         };
 
@@ -78,7 +78,7 @@
             bindings = <
 &trans  &trans      &trans    &trans         &trans          &kp K_REDO        &kp K_PASTE   &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans  &trans
 &trans  &trans      &trans    &kp CAPSLOCK   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT   &trans     &trans      &trans  &trans
-&trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP     &kp END           &trans        &trans      &trans     &trans      &trans  &trans
+&trans  &kp INSERT  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP     &kp END           &trans        &trans      &trans     &trans      &mo 5   &trans
             >;
         };
 
@@ -102,7 +102,15 @@
             bindings = <
 &trans            &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans    &trans  &trans  &trans  &trans        &trans        &kp K_BACK
 &kp K_PLAY_PAUSE  &kp K_NEXT  &trans        &trans           &trans  &trans    &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-&trans            &trans      &trans        &trans           &trans  &trans    &trans  &trans  &trans  &trans        &trans        &trans
+&trans            &trans      &trans        &trans           &trans  &trans    &trans  &mo 5   &trans  &trans        &trans        &trans
+            >;
+        };
+
+        Scary {
+            bindings = <
+&trans  &trans  &trans  &trans  &studio_unlock  &bt BT_CLR    &trans  &trans  &trans  &bt BT_CLR_ALL  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans  &trans  &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans        &trans  &trans  &trans  &trans          &trans  &trans
             >;
         };
     };
