@@ -13,7 +13,7 @@ echo " (Outputs are being written to log files)        "
 echo "================================================="
 
 echo "🔨 Building Left Keyboard... (Logging to build/left.log)"
-west build -s zmk/app -d build/left -b nice_nano@2.0.0 -- -DSHIELD=corne_left -DZMK_CONFIG="/workspaces/zmk-config-homerow/config" -DZephyr_DIR="/workspaces/zmk-config-homerow/modules/zephyr/zephyr/share/zephyr-package/cmake" -DCONFIG_ZMK_STUDIO=y > build/left.log 2>&1 &
+west build -s zmk/app -d build/left -b nice_nano@2.0.0 -S studio-rpc-usb-uart -S studio-rpc-ble -- -DSHIELD=corne_left -DZMK_CONFIG="/workspaces/zmk-config-homerow/config" -DZephyr_DIR="/workspaces/zmk-config-homerow/modules/zephyr/zephyr/share/zephyr-package/cmake" -DCONFIG_ZMK_STUDIO=y > build/left.log 2>&1 &
 PID_LEFT=$!
 
 echo "🔨 Building Right Keyboard... (Logging to build/right.log)"
