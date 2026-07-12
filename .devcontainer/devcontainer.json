@@ -11,6 +11,6 @@
       ]
     }
   },
-  "postCreateCommand": "west init -l config && west update",
+  "postCreateCommand": "[ ! -d .west ] && west init -l config || true; west update",
   "postStartCommand": "chmod +x /workspaces/zmk-config-homerow/build.sh && grep -q 'alias build' ~/.bashrc || echo 'alias build=\"/workspaces/zmk-config-homerow/build.sh\"' >> ~/.bashrc"
 }
