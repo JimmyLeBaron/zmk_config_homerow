@@ -11,19 +11,12 @@
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
+        zmk,matrix_transform = &five_column_transform;
+        /delete-property/ zmk,matrix_transform;
     };
 };
 
-&default_transform {
-    columns = <10>;
-    rows = <4>;
-    map = <
-        1   2   3   4   5    6   7   8   9  10
-      257 258 259 260 261  262 263 264 265 266
-      513 514 515 516 517  518 519 520 521 522
-                  771 772 773  774 775 776
-    >;
-};
+
 
 / {
 
