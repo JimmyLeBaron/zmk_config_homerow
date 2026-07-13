@@ -11,6 +11,7 @@
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
+        zmk,matrix_transform = &five_column_transform;
     };
 
     // --- Macros for switching device + layer simultaneously ---
