@@ -103,6 +103,7 @@
             display-name = "Colon/Semi";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -112,19 +113,19 @@
 
         Col-mac {
             bindings = <
-  &kp Q         &kp W        &kp F        &kp P         &kp B          &kp J          &kp L         &kp U         &kp Y        &kp APOSTROPHE
+  &kp Q         &kp W        &kp F        &kp P               &kp B          &kp J          &kp L               &kp U         &kp Y        &kp APOSTROPHE
   &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml_shift LSHFT T  &kp G          &kp M          &hmr_shift RSHFT N  &hmr RGUI E   &hmr RALT I  &hmr RCTRL O
-  &kp Z         &kp X        &kp C        &kp D         &kp V          &kp K          &kp H         &kp COMMA     &kp DOT      &kp FSLH
-                             &kp ESC      &lt 1 TAB     &lt 2 ENTER    &kp BACKSPACE  &lt 3 SPACE   &lt 4 DELETE
+  &kp Z         &kp X        &kp C        &kp D               &kp V          &kp K          &kp H               &kp COMMA     &kp DOT      &kp FSLH
+                             &kp ESC      &lt 1 TAB           &lt 2 ENTER    &kp BACKSPACE  &lt 3 SPACE         &lt 4 DELETE
             >;
         };
 
         Nav {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &kp LG(X)      &kp LG(C)         &kp LG(V)       &kp LG(Z)     &kp LS(LG(Z))
-  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-  &trans  &trans  &trans  &trans  &trans    &kp INSERT     &kp HOME          &kp PAGE_DOWN   &kp PAGE_UP   &kp END
-                  &trans  &trans  &trans    &trans         &lt 5 UNDERSCORE  &trans
+  &trans  &trans  &trans  &trans  &trans    &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp LG(Z)     &kp LS(LG(Z))
+  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+  &trans  &trans  &trans  &trans  &trans    &kp INSERT    &kp HOME          &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+                  &trans  &trans  &trans    &trans        &lt 5 UNDERSCORE  &trans
             >;
         };
 
@@ -139,10 +140,10 @@
 
         Symbols {
             bindings = <
-  &kp GRAVE    &kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)    &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &trans
-  &colon_semi  &kp BSLH      &kp LS(LPAR)  &kp LS(RPAR)   &kp EQUAL       &trans         &trans         &trans        &trans        &trans
-  &trans       &trans        &kp LBKT      &kp RBKT       &kp MINUS       &trans         &trans         &trans        &trans        &trans
-                           &trans        &trans         &trans          &trans         &trans         &trans
+  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &trans  &kp GRAVE
+  &colon_semi   &kp BSLH    &kp LS(LPAR)   &kp LS(RPAR)  &kp EQUAL        &trans         &trans        &trans        &trans  &trans
+  &trans        &trans      &kp LBKT       &kp RBKT      &kp MINUS        &trans         &trans        &trans        &trans  &trans
+                            &trans         &trans        &trans           &trans         &trans        &trans
             >;
         };
 
