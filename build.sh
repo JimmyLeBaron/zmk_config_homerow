@@ -1,8 +1,11 @@
 #!/bin/bash
 set -e
 
+# Determine workspace directory dynamically from script location
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Export the exact Zephyr base path to fix the auto-discovery bug
-export ZEPHYR_BASE="/workspaces/zmk-config-homerow/modules/zephyr/zephyr"
+export ZEPHYR_BASE="${SCRIPT_DIR}/modules/zephyr/zephyr"
 
 # Make sure build directory exists for logs
 mkdir -p build
@@ -13,11 +16,11 @@ echo " (Outputs are being written to log files)        "
 echo "================================================="
 
 echo "🔨 Building Left Keyboard... (Logging to build/left.log)"
-west build -s zmk/app -d build/left -b nice_nano@2.0.0 -S studio-rpc-usb-uart -- -DSHIELD="corne_left raw_hid_adapter" -DZMK_CONFIG="/workspaces/zmk-config-homerow/config" -DZephyr_DIR="/workspaces/zmk-config-homerow/modules/zephyr/zephyr/share/zephyr-package/cmake" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_TRANSPORT_BLE=y > build/left.log 2>&1 &
+west build -s zmk/app -d build/left -b nice_nano@2.0.0 -S studio-rpc-usb-uart -- -DSHIELD="corne_left raw_hid_adapter" -DZMK_CONFIG="${SCRIPT_DIR}/config" -DZephyr_DIR="${SCRIPT_DIR}/modules/zephyr/zephyr/share/zephyr-package/cmake" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_TRANSPORT_BLE=y > build/left.log 2>&1 &
 PID_LEFT=$!
 
 echo "🔨 Building Right Keyboard... (Logging to build/right.log)"
-west build -s zmk/app -d build/right -b nice_nano@2.0.0 -- -DSHIELD=corne_right -DZMK_CONFIG="/workspaces/zmk-config-homerow/config" -DZephyr_DIR="/workspaces/zmk-config-homerow/modules/zephyr/zephyr/share/zephyr-package/cmake" > build/right.log 2>&1 &
+west build -s zmk/app -d build/right -b nice_nano@2.0.0 -- -DSHIELD=corne_right -DZMK_CONFIG="${SCRIPT_DIR}/config" -DZephyr_DIR="${SCRIPT_DIR}/modules/zephyr/zephyr/share/zephyr-package/cmake" > build/right.log 2>&1 &
 PID_RIGHT=$!
 
 echo "⏳ Waiting for compilers to finish..."
